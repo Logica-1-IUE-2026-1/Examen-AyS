@@ -1,3 +1,5 @@
+"""Programa para controlar el encendido y apagado de luces,
+aire acondicionado y puerta de un local comercial"""
 #pylint: disable= w1203
 import datetime
 import logging
@@ -16,8 +18,9 @@ hora_fin_jornada = datetime.time(18, 0, 0)  # 6:00 PM
 hora_apertura = datetime.time(7, 0, 0)  # Hora de apertura del local 7:00 AM
 hora_cierre = datetime.time(18, 0, 0)  # Hora de cierre del local 6:00 PM
 
-#Se pone en True cuando llega el primer trabajador y se pone en False cuando se va el ultimo trabajador
-local_ocupado = False
+#Se pone en True cuando llega el primer trabajador
+#Se pone en False cuando se va el ultimo trabajador
+LOCAL_OCUPADO = False
 
 estado_aire = False
 estado_luces = False
@@ -40,4 +43,5 @@ if hora_actual > hora_cierre:
     estado_puerta = False
     estado_aire = False
     estado_luces = False
-    logging.info(f"Jornada laboral finalizada. Puerta cerrada, aire y luces apagados: {hora_actual}")
+    logging.info("Jornada laboral finalizada.")
+    logging.info(f"Puerta cerrada, aire y luces apagados: {hora_actual}")
