@@ -1,0 +1,9 @@
+2026-05-20 07:46:00,255 - INFO - Inicio de jornada laboral: 07:46:00.255569
+2026-05-20 07:46:00,255 - INFO - Puerta abierta: 07:46:00.255569
+2026-05-20 07:46:00,256 - INFO - Aire y luces encendidos: 07:46:00.255569
+2026-05-20 08:31:37,949 - INFO - Local ocupado: True
+2026-05-20 08:31:37,950 - INFO - Estado puerta: True
+2026-05-20 08:31:37,950 - INFO - Estado aire y luces: True
+2026-05-20 08:31:46,570 - INFO - Local ocupado despues de validar cierre: True
+2026-05-20 08:31:46,571 - INFO - Estado final puerta: False
+2026-05-20 08:31:46,571 - INFO - Estado final aire y luces: False
