@@ -7,3 +7,43 @@
 2026-05-20 08:31:46,570 - INFO - Local ocupado despues de validar cierre: True
 2026-05-20 08:31:46,571 - INFO - Estado final puerta: False
 2026-05-20 08:31:46,571 - INFO - Estado final aire y luces: False
+2026-05-20 08:44:19,347 - INFO - La puerta se abre automáticamente:
+2026-05-20 08:44:51,889 - INFO - Local ocupado: False
+2026-05-20 08:44:51,889 - INFO - Estado puerta: False
+2026-05-20 08:44:51,889 - INFO - Estado aire y luces: False
+2026-05-20 08:45:06,290 - INFO - Local ocupado: True
+2026-05-20 08:45:06,291 - INFO - Estado puerta: True
+2026-05-20 08:45:06,291 - INFO - Estado aire y luces: True
+2026-05-20 08:45:10,760 - INFO - Local ocupado despues de validar cierre: True
+2026-05-20 08:45:10,761 - INFO - Estado final puerta: False
+2026-05-20 08:45:10,761 - INFO - Estado final aire y luces: False
+2026-05-20 08:49:05,944 - INFO - Local ocupado: True
+2026-05-20 08:49:05,945 - INFO - Estado puerta: True
+2026-05-20 08:49:05,946 - INFO - Estado aire y luces: True
+2026-05-20 08:49:19,825 - INFO - Local ocupado despues de validar cierre: True
+2026-05-20 08:49:19,825 - INFO - Estado final puerta: False
+2026-05-20 08:49:19,826 - INFO - Estado final aire y luces: False
+2026-05-20 08:51:01,279 - INFO - Local ocupado: True
+2026-05-20 08:51:01,280 - INFO - Estado puerta: True
+2026-05-20 08:51:01,280 - INFO - Estado aire y luces: True
+2026-05-20 08:51:08,718 - INFO - Local ocupado: True
+2026-05-20 08:51:08,718 - INFO - Estado puerta: True
+2026-05-20 08:51:08,719 - INFO - Estado aire y luces: True
+2026-05-20 08:59:11,460 - INFO - Local ocupado: True
+2026-05-20 08:59:11,461 - INFO - Estado puerta: True
+2026-05-20 08:59:11,461 - INFO - Estado aire y luces: True
+2026-05-20 08:59:11,462 - INFO - Local ocupado despues de validar cierre: True
+2026-05-20 08:59:11,462 - INFO - Estado final puerta: False
+2026-05-20 08:59:11,462 - INFO - Estado final aire y luces: False
+2026-05-20 18:59:50,098 - INFO - Local ocupado: True
+2026-05-20 18:59:50,099 - INFO - Estado puerta: True
+2026-05-20 18:59:50,099 - INFO - Estado aire y luces: False
+2026-05-20 18:59:50,099 - INFO - Local ocupado despues de validar cierre: True
+2026-05-20 18:59:50,099 - INFO - Estado final puerta: False
+2026-05-20 18:59:50,099 - INFO - Estado final aire y luces: False
+2026-05-20 19:00:25,837 - INFO - Local ocupado: True
+2026-05-20 19:00:25,837 - INFO - Estado puerta: True
+2026-05-20 19:00:25,838 - INFO - Estado aire y luces: False
+2026-05-20 19:00:25,838 - INFO - Local ocupado despues de validar cierre: True
+2026-05-20 19:00:25,838 - INFO - Estado final puerta: False
+2026-05-20 19:00:25,838 - INFO - Estado final aire y luces: False

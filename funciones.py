@@ -1,6 +1,7 @@
 """Funciones para el control de sistemas del local"""
 #pylint: disable= w1203
 import random
+import time
 
 
 def ingresar_trabajador(hora_actual,hora_inicio_jornada):
@@ -31,16 +32,21 @@ def aire_luces(hora_actual, hora_inicio_jornada, hora_fin_jornada, local_ocupado
 
     return estado_aire_luces
 
-def validar_cierre(local_ocupado):
+def validar_cierre(
+    hora_actual,
+    hora_cierre,
+    local_ocupado):
     """Valida si esta vacio para cerrar el local"""
-    validacion = input("¿VALIDAR CIERRE? (s/n): ")
-    try:
-        if validacion.lower() == 's':
-            local_ocupado = False
-            return local_ocupado
-    except AttributeError:
-        pass
-    return False
+    if hora_actual >= hora_cierre:
+        while True:
+            validacion = input("¿VALIDAR CIERRE? (s/n): ")
+            if validacion == 's':
+                local_ocupado = False
+                return local_ocupado
+            elif validacion == 'n':
+                print("El local sigue ocupado.")
+            else:
+                print("Entrada invalida. Use s/n.")
 
 def finalizar_jornada(hora_actual, hora_cierre, local_ocupado):
     """Finaliza la jornada laboral"""
@@ -53,11 +59,13 @@ def finalizar_jornada(hora_actual, hora_cierre, local_ocupado):
     return estado_puerta, estado_aire_luces
 
 def puerta_automatica():
-    """Simula detección automática"""
+    """Simula una puerta automática"""
     detectar_persona = random.choice([True, False])
     if detectar_persona:
         print("Persona detectada.")
         print("Puerta abierta.")
+        time.sleep(3)
+        print("Puerta cerrada.")
     else:
         print("No hay personas.")
         print("Puerta cerrada.")

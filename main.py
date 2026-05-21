@@ -13,17 +13,18 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s')
 
-# HORA ACTUAL
-hora_actual = datetime.datetime.now().time()
-
 # HORARIOS DEL LOCAL
 hora_inicio_jornada = datetime.time(6, 0, 0)
 hora_fin_jornada = datetime.time(18, 0, 0)
 hora_apertura = datetime.time(7, 0, 0)
 hora_cierre = datetime.time(18, 0, 0)
 
+# HORA ACTUAL
+hora_actual = datetime.datetime.now().time()
+
 def main():
     """Función principal para controlar el sistema del local"""
+
 
     # INGRESO DEL PRIMER TRABAJADOR
     local_ocupado = funciones.ingresar_trabajador(hora_actual,hora_inicio_jornada)
@@ -47,12 +48,6 @@ def main():
     logging.info(f"Estado aire y luces: {estado_aire_luces}")
     print(f"Estado aire y luces: {estado_aire_luces}")
 
-    # VALIDACION DE CIERRE
-
-    salida_ultimo = funciones.validar_cierre(local_ocupado)
-    if salida_ultimo:
-        local_ocupado = False
-
     logging.info(f"Local ocupado despues de validar cierre: {local_ocupado}")
     print(f"Local ocupado despues de validar cierre: {local_ocupado}")
 
@@ -68,11 +63,10 @@ def main():
     print(f"Estado final puerta: {estado_puerta}")
     print(f"Estado final aire y luces: {estado_aire_luces}")
 
-logging.info("La puerta se abre automáticamente:")
-print(f"La puerta se abre automáticamente: {funciones.puerta_automatica()}")
-print(f"La puerta se abre automáticamente: {funciones.puerta_automatica()}")
-print(f"La puerta se abre automáticamente: {funciones.puerta_automatica()}")
-print(f"La puerta se abre automáticamente: {funciones.puerta_automatica()}")
 
 if __name__ == "__main__":
     main()
+
+funciones.puerta_automatica()
+funciones.puerta_automatica()
+funciones.puerta_automatica()
