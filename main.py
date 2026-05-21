@@ -39,7 +39,7 @@ if hora_inicio_jornada <= hora_actual <= hora_fin_jornada:
     logging.info(f"Aire y luces encendidos: {hora_actual}")
 
 #Si la hora actual es mayor a la hora de cierre, se cierra la puerta y se apagan el aire y las luces
-if hora_actual > hora_cierre:
+if hora_actual > hora_cierre and LOCAL_OCUPADO == False:
     estado_puerta = False
     estado_aire = False
     estado_luces = False
